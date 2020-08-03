@@ -5,11 +5,16 @@ body {
 	color: #576671;
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
-	
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 /* Page */
@@ -33,16 +38,14 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	right: 0;
 	z-index: 1000;
+    padding-top: 30px;
 }
 
 .header__inner {
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 0; 
 	align-items: center;
-	
 }
-
 
 /* Nav */
 .nav {
@@ -594,4 +597,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 	opacity: 100%;
 	transition: opacity .2s linear;
+}
+
+@media (max-width: 1299px) {
+    .container {
+        max-width: 1270px;
+    }
 }
